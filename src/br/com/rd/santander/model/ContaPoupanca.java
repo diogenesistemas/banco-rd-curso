@@ -3,18 +3,14 @@ package br.com.rd.santander.model;
 public class ContaPoupanca extends Conta{
     private Double taxaDeJuros;
 
-    public ContaPoupanca(Double saldo, Double taxaDeJuros) {
-        super(saldo);
+   public ContaPoupanca(){
+       super();
+   }
+
+    public ContaPoupanca(Double saldo, Cliente cliente, Double taxaDeJuros) {
+        super(saldo, cliente);
         this.taxaDeJuros = taxaDeJuros;
     }
-
-    //    public void depositarDinheiro(Double valor){
-//        depositar(valor);
-//    }
-
-//    public void sacarDinhiero(Double valor){
-//        sacar(valor);
-//    }
 
     public void recolherJuros(){
         Double saldo = getSaldo();
@@ -24,7 +20,11 @@ public class ContaPoupanca extends Conta{
         System.out.println("A conta rendeu "+ rendimento + " de juros!");
     }
 
+    public Double getTaxaDeJuros() {
+        return taxaDeJuros;
+    }
 
-
-
+    public void setTaxaDeJuros(Double taxaDeJuros) {
+        this.taxaDeJuros = taxaDeJuros;
+    }
 }

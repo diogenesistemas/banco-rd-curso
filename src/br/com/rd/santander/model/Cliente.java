@@ -5,7 +5,6 @@ public class Cliente {
     private String sobrenome;
     private String rg;
     private String cpf;
-    private Conta conta;
 
     public Cliente(Integer numeroDeCliente, String sobrenome, String rg, String cpf) {
         this.numeroDeCliente = numeroDeCliente;
@@ -17,10 +16,6 @@ public class Cliente {
     public Integer getNumeroDeCliente() {
         return numeroDeCliente;
     }
-
-//    public void setNumeroDeCliente(Integer numeroDeCliente) {
-//        this.numeroDeCliente = numeroDeCliente;
-//    }
 
     public String getSobrenome() {
         return sobrenome;
@@ -46,11 +41,4 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Conta getConta() {
-        return conta;
-    }
-
-    public void setConta(Conta conta) {
-        this.conta = conta;
-    }
 }

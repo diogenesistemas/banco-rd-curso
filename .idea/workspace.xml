@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="387e91da-0586-4db9-8711-02539a00b787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/rd/santander/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/rd/santander/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/rd/santander/model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/rd/santander/model/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/rd/santander/model/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/rd/santander/model/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/rd/santander/model/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/rd/santander/model/ContaPoupanca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/rd/santander/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/rd/santander/view/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,40 +68,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1581516062789">
+    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1581537533599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1581516062789" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1581518770959">
+    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1581537533599" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1581537485570">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581518770959" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1581518770959">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581537485570" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1581537485570">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581518770959" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1581518770959">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581537485570" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1581537485569">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581518770959" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1581518770959">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581537485569" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1581537485570">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581518770959" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581537485570" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1581520766244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581520766244" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/br/com/rd/santander/model/Cheque.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

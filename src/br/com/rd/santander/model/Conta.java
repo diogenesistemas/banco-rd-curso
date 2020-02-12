@@ -2,9 +2,15 @@ package br.com.rd.santander.model;
 
 public class Conta {
     private Double saldo;
+    private Cliente cliente;
 
-    public Conta(Double saldo) {
+    public Conta() {
+
+    }
+
+    public Conta(Double saldo, Cliente cliente) {
         this.saldo = saldo;
+        this.cliente = cliente;
     }
 
     public void depositar(Double valor){
@@ -17,7 +23,7 @@ public class Conta {
     }
 
     public void sacar(Double valor){
-        if(valor<=saldo){
+        if(valor<=this.saldo){
             this.saldo-=valor;
             System.out.println("Saque no valor de: " + valor + " realizado com sucesso!!");
         }else{
@@ -37,5 +43,13 @@ public class Conta {
 
     public Double getSaldo() {
         return saldo;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }

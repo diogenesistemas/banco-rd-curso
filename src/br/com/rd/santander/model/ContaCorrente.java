@@ -4,32 +4,27 @@ public class ContaCorrente extends Conta{
 
     private Double limiteChequeEspecial;
 
-    public ContaCorrente(Double saldo, Double limiteChequeEspecial) {
-        super(saldo);
+    public ContaCorrente(){
+        super();
+    }
+
+    public ContaCorrente(Double saldo, Cliente cliente, Double limiteChequeEspecial) {
+        super(saldo, cliente);
         this.limiteChequeEspecial = limiteChequeEspecial;
     }
 
-
-    //    public void depositarDinheiro(Double valor){
-//        depositar(valor);
-//    }
-
-//    public void sacarDinheiro(Double valor){
-//
-//
-//    }
-
-
     @Override
-    public void sacar(Double valor) {
+    public void sacar(Double valorDeSaque) {
         Double saldo = getSaldo();
-        if(valor<=saldo){
-            saldo+=valor;
+        if(valorDeSaque<=saldo){
+            saldo+=valorDeSaque;
             setSaldo(saldo);
-            System.out.println("Saque no valor de: "+ valor + " realizado com sucesso!!");
-        }else if (valor <=this.limiteChequeEspecial){
-            this.limiteChequeEspecial-=valor;
-            System.out.println("Saque no valor de: "+ valor + " realizado com sucesso!!");
+            System.out.println("Saque no valor de: "+ valorDeSaque + " realizado com sucesso!!");
+        }else if (valorDeSaque <= (saldo + this.limiteChequeEspecial)){
+            double diferenca =  valorDeSaque - saldo;
+            this.limiteChequeEspecial -= diferenca;
+            setSaldo(saldo-valorDeSaque);
+            System.out.println("Saque no valor de: "+ valorDeSaque + " realizado com sucesso!!");
             System.out.println("Limite do cheque especial atualizado para: "+ limiteChequeEspecial);
         }else{
             System.out.println("Não é possível realizar o saque, valor maior que o limite");
@@ -37,8 +32,7 @@ public class ContaCorrente extends Conta{
     }
 
     public void depositarCheque(Cheque cheque){
-        setSaldo(getSaldo()+cheque.getValor());
-        System.out.println("Depósito  de Cheque no valor de: "+ cheque.getValor() + " realizado com sucesso!!");
+        depositar(cheque.getValor());
     }
 
     public Double getLimiteChequeEspecial() {
