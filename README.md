@@ -1,2 +1,2 @@
 # banco-rd-curso
-Entrega de Atividade Curso Desenvolvedor RaiaDrogasil FullStack Java 
+Exercício de Programação Orientada a Objetos
